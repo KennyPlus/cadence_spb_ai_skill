@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "units": "mm",
+  "basis": "Synthetic routing exercise; values and priorities are explicit examples, not inferred from names.",
+  "passes": 5,
+  "protected_nets": [],
+  "groups": [
+    {"name":"critical","nets":["DEMO_CLK"],"priority":1,"width":0.2,"clearance":0.15,"basis":"The synthetic task explicitly designates this net as first.","layers":["TOP","BOTTOM"],"max_vias_per_connection":2},
+    {"name":"remaining","nets":["DEMO_GND"],"priority":100,"width":0.4,"clearance":0.2,"basis":"The synthetic task explicitly requests this group second."}
+  ]
+}

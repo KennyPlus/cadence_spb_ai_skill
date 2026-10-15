@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "name": "agent_nonplated_080",
+  "kind": "mounting",
+  "units": "mm",
+  "accuracy": 3,
+  "sources": [
+    {
+      "location": "Explicit synthetic acceptance fixture",
+      "basis": "Test only: finished hole 0.8 +0.05/-0.03 mm; differentiated copper and mask sizes test layer mapping, not a production recommendation."
+    }
+  ],
+  "pads": {
+    "begin": {
+      "shape": "circle",
+      "width": "1.6",
+      "height": "1.6"
+    },
+    "internal": {
+      "shape": "circle",
+      "width": "1.5",
+      "height": "1.5"
+    },
+    "end": {
+      "shape": "circle",
+      "width": "1.7",
+      "height": "1.7"
+    },
+    "mask_top": {
+      "shape": "circle",
+      "width": "1.8",
+      "height": "1.8"
+    },
+    "mask_bottom": {
+      "shape": "circle",
+      "width": "1.9",
+      "height": "1.9"
+    },
+    "paste_top": null,
+    "paste_bottom": null
+  },
+  "drill": {
+    "diameter": "0.8",
+    "plating": "non_plated",
+    "plus": "0.05",
+    "minus": "0.03",
+    "symbol_diameter": "0.4"
+  }
+}

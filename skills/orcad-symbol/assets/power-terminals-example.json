@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "name": "POWER_TERMINALS_DEMO",
+  "refdes": "U",
+  "footprint": "",
+  "sources": [
+    {
+      "location": "Synthetic fixture, not a production component",
+      "basis": "Demonstrate explicit supply direction and same-name ground pin numbers without hidden connections"
+    }
+  ],
+  "units": "capture_db",
+  "body": [
+    0,
+    0,
+    100,
+    80
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "VIN",
+      "role": "power_input",
+      "capture_type": "POWER",
+      "visible": true,
+      "implicit_net": null,
+      "no_connect": false,
+      "side": "left",
+      "offset": 20,
+      "basis": "Synthetic explicit requirement: power_input; name alone is not evidence"
+    },
+    {
+      "number": "2",
+      "name": "VOUT",
+      "role": "power_output",
+      "capture_type": "POWER",
+      "visible": true,
+      "implicit_net": null,
+      "no_connect": false,
+      "side": "right",
+      "offset": 20,
+      "basis": "Synthetic explicit requirement: power_output; name alone is not evidence"
+    },
+    {
+      "number": "3",
+      "name": "GND",
+      "role": "power_return",
+      "capture_type": "POWER",
+      "visible": true,
+      "implicit_net": null,
+      "no_connect": false,
+      "side": "bottom",
+      "offset": 30,
+      "basis": "Synthetic explicit requirement: power_return; name alone is not evidence"
+    },
+    {
+      "number": "4",
+      "name": "GND",
+      "role": "power_return",
+      "capture_type": "POWER",
+      "visible": true,
+      "implicit_net": null,
+      "no_connect": false,
+      "side": "bottom",
+      "offset": 60,
+      "basis": "Synthetic explicit requirement: power_return; name alone is not evidence"
+    },
+    {
+      "number": "5",
+      "name": "NC",
+      "role": "internal_switch",
+      "capture_type": "PASSIVE",
+      "visible": true,
+      "implicit_net": null,
+      "no_connect": false,
+      "side": "right",
+      "offset": 50,
+      "basis": "Synthetic explicit requirement: internal_switch; name alone is not evidence"
+    },
+    {
+      "number": "6",
+      "name": "DNC",
+      "role": "no_connect",
+      "capture_type": "PASSIVE",
+      "visible": true,
+      "implicit_net": null,
+      "no_connect": true,
+      "side": "left",
+      "offset": 50,
+      "basis": "Synthetic explicit requirement: no_connect; name alone is not evidence"
+    }
+  ]
+}

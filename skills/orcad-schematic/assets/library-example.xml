@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Synthetic two-pin symbol; no native acceptance or production footprint claim. -->
+<Lib>
+  <Defn name="example.olb" />
+  <Package>
+    <Defn alphabeticNumbering="2" isHomogeneous="1" name="DEMO_TWO_PIN" refdesPrefix="R" />
+    <LibPart>
+      <Defn />
+      <NormalView>
+        <Defn suffix=".Normal" />
+        <SymbolBBox><Defn x1="0" y1="0" x2="100" y2="40" /></SymbolBBox>
+        <IsPinNumbersVisible><Defn val="1" /></IsPinNumbersVisible>
+        <IsPinNamesVisible><Defn val="1" /></IsPinNamesVisible>
+        <PartValue><Defn name="DEMO_TWO_PIN" /></PartValue>
+        <Reference><Defn name="R" /></Reference>
+        <Line><Defn lineStyle="0" lineWidth="0" x1="0" y1="0" x2="100" y2="0" /></Line>
+        <Line><Defn lineStyle="0" lineWidth="0" x1="100" y1="0" x2="100" y2="40" /></Line>
+        <Line><Defn lineStyle="0" lineWidth="0" x1="100" y1="40" x2="0" y2="40" /></Line>
+        <Line><Defn lineStyle="0" lineWidth="0" x1="0" y1="40" x2="0" y2="0" /></Line>
+        <SymbolPinScalar>
+          <Defn hotptX="-20" hotptY="20" startX="0" startY="20" name="P1" position="0" type="4" visible="1" />
+          <IsGlobal><Defn val="0" /></IsGlobal><IsNoConnect><Defn val="0" /></IsNoConnect><IsNumberVisible><Defn val="1" /></IsNumberVisible>
+        </SymbolPinScalar>
+        <SymbolPinScalar>
+          <Defn hotptX="120" hotptY="20" startX="100" startY="20" name="P2" position="1" type="4" visible="1" />
+          <IsGlobal><Defn val="0" /></IsGlobal><IsNoConnect><Defn val="0" /></IsNoConnect><IsNumberVisible><Defn val="1" /></IsNumberVisible>
+        </SymbolPinScalar>
+      </NormalView>
+      <PhysicalPart><Defn /><PinNumber><Defn number="1" position="0" /></PinNumber><PinNumber><Defn number="2" position="1" /></PinNumber></PhysicalPart>
+    </LibPart>
+  </Package>
+</Lib>

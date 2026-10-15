@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "basis": "Demonstration mapping only. Probe and verify the actual Capture runtime enums before native use.",
+  "types": {
+    "PASSIVE": 4,
+    "POWER": 7
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "units": "mm",
+  "accuracy": 4,
+  "basis": "Synthetic geometry example only; these dimensions are not manufacturing recommendations.",
+  "board": {
+    "outline": [[0,0],[30,0],[30,20],[0,20],[0,0]],
+    "edge_clearance": 1,
+    "component_clearance": 0.5,
+    "keepouts": [{
+      "name": "mechanical_space",
+      "polygon": [[24,5],[29,5],[29,15],[24,15],[24,5]],
+      "sides": ["top","bottom"],
+      "basis": "Synthetic reserved mechanical space."
+    }]
+  },
+  "footprints": {
+    "DEMO_R": {
+      "bounds": [-1.2,-0.7,1.2,0.7],
+      "pins": {"1": [-1,0], "2": [1,0]},
+      "through": false,
+      "basis": "Synthetic top-view local coordinates about symbol origin; no native PSM provided."
+    }
+  },
+  "components": [
+    {"refdes":"R1","symbol":"DEMO_R","xy":[8,10],"rotation":0,"side":"top","fixed":true,"role":"demo fixed endpoint","basis":"Explicit synthetic position."},
+    {"refdes":"R2","symbol":"DEMO_R","xy":[16,10],"rotation":180,"side":"bottom","fixed":false,"role":"demo second endpoint","basis":"Explicit synthetic placement illustrating the bottom side."}
+  ],
+  "rules": [
+    {"kind":"distance","from":{"refdes":"R1","pin":"1"},"to":{"refdes":"R2","pin":"1"},"min":0,"max":10,"basis":"Synthetic pin-distance constraint."},
+    {"kind":"delta_x","from":{"refdes":"R1"},"to":{"refdes":"R2"},"min":4,"max":10,"basis":"Synthetic relative-position constraint."}
+  ]
+}

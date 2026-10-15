@@ -1,0 +1,68 @@
+{
+  "allegro-library": [
+    "SKILL.md",
+    "assets/shape-example.json",
+    "references/runtime.md",
+    "scripts/inspect.il",
+    "scripts/library.py"
+  ],
+  "allegro-package": [
+    "SKILL.md",
+    "assets/smd2-example.json",
+    "references/runtime.md",
+    "references/specification.md",
+    "scripts/compat-exec.sh",
+    "scripts/package.py",
+    "scripts/prepare_spb24.py",
+    "scripts/readback.il"
+  ],
+  "allegro-padstack": [
+    "SKILL.md",
+    "assets/mounting-example.json",
+    "assets/smd-example.json",
+    "assets/thru-example.json",
+    "references/layer-intent.md",
+    "references/runtime.md",
+    "references/specification.md",
+    "scripts/compat-exec.sh",
+    "scripts/padstack.py",
+    "scripts/prepare_spb24.py"
+  ],
+  "allegro-pcb": [
+    "SKILL.md",
+    "assets/example-netlist/pstchip.dat",
+    "assets/example-netlist/pstxnet.dat",
+    "assets/example-netlist/pstxprt.dat",
+    "assets/placement-example.json",
+    "assets/routing-example.json",
+    "references/placement.md",
+    "references/routing.md",
+    "references/runtime.md",
+    "scripts/formats.py",
+    "scripts/model.py",
+    "scripts/native.py",
+    "scripts/pcb.py",
+    "scripts/routing.py"
+  ],
+  "orcad-schematic": [
+    "SKILL.md",
+    "assets/design-example.json",
+    "assets/library-example.xml",
+    "assets/profile-example.json",
+    "assets/template-example.xml",
+    "references/capture.md",
+    "references/design.md",
+    "references/model.md",
+    "scripts/capture_bridge.tcl",
+    "scripts/schematic.py"
+  ],
+  "orcad-symbol": [
+    "SKILL.md",
+    "assets/observed-profile.json",
+    "assets/power-terminals-example.json",
+    "references/runtime.md",
+    "references/specification.md",
+    "scripts/capture_bridge.tcl",
+    "scripts/symbol.py"
+  ]
+}

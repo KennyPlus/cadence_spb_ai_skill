@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Synthetic XSD fixture, not a native-exported or native-accepted template. -->
+<Design>
+  <Defn name="example.dsn" objectType="SCHEMATIC" rootName="SCHEMATIC1" />
+  <Cache><Defn /></Cache>
+  <Schematic>
+    <Defn name="SCHEMATIC1" />
+    <Page>
+      <Defn name="PAGE1" />
+      <PageSizeInfo><Defn IsMetric="0" PinToPin="10" height="1000" width="1600" /></PageSizeInfo>
+    </Page>
+  </Schematic>
+</Design>

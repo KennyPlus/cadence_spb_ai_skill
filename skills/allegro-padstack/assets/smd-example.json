@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "name": "agent_smd_020x060",
+  "kind": "smd",
+  "units": "mm",
+  "accuracy": 3,
+  "sources": [
+    {
+      "location": "Synthetic example",
+      "basis": "Explicit test geometry only; not a production land pattern"
+    }
+  ],
+  "pads": {
+    "begin": {
+      "shape": "rectangle",
+      "width": "0.200",
+      "height": "0.600"
+    },
+    "mask_top": {
+      "shape": "rectangle",
+      "width": "0.200",
+      "height": "0.600"
+    },
+    "paste_top": {
+      "shape": "rectangle",
+      "width": "0.200",
+      "height": "0.600"
+    }
+  }
+}

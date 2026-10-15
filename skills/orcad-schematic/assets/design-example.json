@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "name": "DEMO_DIVIDER",
+  "root": "SCHEMATIC1",
+  "units": "capture_db",
+  "grid": 10,
+  "sources": [{"location": "Synthetic example", "basis": "Demonstrate explicit two-resistor divider connectivity, not a qualified circuit or component library."}],
+  "pages": [{"name": "PAGE1", "size": [1000, 700]}],
+  "parts": [
+    {"refdes": "J1", "package": "DEMO_TWO_PIN", "page": "PAGE1", "at": [60, 400], "value": "INPUT", "footprint": "DEMO_CONNECTOR", "basis": "Synthetic source and return terminals", "no_connect": []},
+    {"refdes": "R1", "package": "DEMO_TWO_PIN", "page": "PAGE1", "at": [300, 200], "value": "10K", "footprint": "DEMO_R", "basis": "Synthetic upper divider resistor", "no_connect": []},
+    {"refdes": "R2", "package": "DEMO_TWO_PIN", "page": "PAGE1", "at": [600, 200], "value": "10K", "footprint": "DEMO_R", "basis": "Synthetic lower divider resistor", "no_connect": []}
+  ],
+  "nets": [
+    {"name": "VIN", "page": "PAGE1", "nodes": [["J1", "1"], ["R1", "1"]], "wires": [[[40, 420], [40, 220]], [[40, 220], [280, 220]]], "basis": "Explicit input connection"},
+    {"name": "VOUT", "page": "PAGE1", "nodes": [["R1", "2"], ["R2", "1"]], "wires": [[[420, 220], [580, 220]]], "basis": "Explicit divider midpoint"},
+    {"name": "RETURN", "page": "PAGE1", "nodes": [["R2", "2"], ["J1", "2"]], "wires": [[[720, 220], [720, 520]], [[720, 520], [180, 520]], [[180, 520], [180, 420]]], "basis": "Explicit source return"}
+  ]
+}

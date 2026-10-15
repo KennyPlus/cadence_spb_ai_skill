@@ -1,0 +1,12 @@
+FILE_TYPE=LIBRARY_PARTS;
+{ Synthetic parser example, not a production device library. }
+primitive 'DEMO_RES';
+  pin
+    'A': PIN_NUMBER='(1)'; PINUSE='UNSPEC';
+    'B': PIN_NUMBER='(2)'; PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='DEMO_RES'; JEDEC_TYPE='DEMO_R'; VALUE='1K';
+  end_body;
+end_primitive;
+END.
